@@ -5,9 +5,10 @@ A simple context menu written in React using edited client.lua from qb-menu and 
 - xm_menu/client/main.lua code from qb-menu and edited to work standalone.
 - UI re-written in React.
 
-# Preview
-https://r2.fivemanage.com/images/r365d_3zQhpDwMdrJm.png
-https://r2.fivemanage.com/images/r365d_p9urrEeY9w2h.png
+# Preview:
+<img src='https://r2.fivemanage.com/images/r365d_3zQhpDwMdrJm.png' width='750'>
+<img src='https://r2.fivemanage.com/images/r365d_p9urrEeY9w2h.png' width='750'>
+
 
 
 EXAMPLE USAGE:
