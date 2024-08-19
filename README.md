@@ -7,6 +7,7 @@ A simple context menu written in React using edited client.lua from qb-menu and 
 
 # Preview:
 <img src='https://r2.fivemanage.com/images/r365d_3zQhpDwMdrJm.png' width='300'>
+<img src='https://r2.fivemanage.com/images/r365d_mrJpK18niXes.png' width='300'>
 <img src='https://r2.fivemanage.com/images/r365d_Ui1G5aImlc4k.png' width='300'>
 <img src='https://r2.fivemanage.com/images/r365d_p9urrEeY9w2h.png' width='300'>
 <img src='https://r2.fivemanage.com/images/r365d_zG3tvvRKPAIc.png' width='800'>
@@ -75,6 +76,7 @@ RegisterCommand("xmenu", function(source, args, raw)
     exports.xm_menu:openMenu(Menu)
 end)
 
+-- EXAMPLE OF SETTING PARAMETERS:
 -- bool is true or false
 params = {
     event = "your:event",
