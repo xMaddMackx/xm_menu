@@ -4,6 +4,8 @@ A simple context menu written in React using edited client.lua from qb-menu and 
 # Credits: QBCore (qb-menu)
 - xm_menu/client/main.lua code from qb-menu and edited to work standalone.
 - UI re-written in React.
+- Added option to set colorScheme of the menu.
+- Added option to set iconColor for font-awesome icons.
 
 # Preview:
 <img src='https://r2.fivemanage.com/images/r365d_3zQhpDwMdrJm.png' width='300'>
@@ -36,6 +38,7 @@ RegisterCommand("xmenu", function(source, args, raw)
             header = "Main Title",
             txt = "Main title description",
             isMenuHeader = true,
+            colorScheme = "#dc143c", -- optional (can only set in the menu header where isMenuHeader = true)
         },
         {
             header = "Sub Menu Button",
@@ -53,6 +56,7 @@ RegisterCommand("xmenu", function(source, args, raw)
             header = "Sub Menu Button",
             txt = "This is 1 line.",
             icon = "fas fa-hands",
+            iconColor = "white", -- optional (will use default colorScheme | only for font-awesome icons).
             params = {
                 event = "xm_menu:client:testMenu2",
                 args = {
@@ -64,6 +68,7 @@ RegisterCommand("xmenu", function(source, args, raw)
             header = "Sub Menu Button",
             txt = "This is line 1. \nThis is line 2. \n This is line 3. \nThis is line 4. \nThis is line 5.",
             icon = "fas fa-hands",
+            -- iconColor = "#fe00007c", -- optional
             disabled = false,
             params = {
                 event = "xm_menu:client:testMenu2",
@@ -76,7 +81,6 @@ RegisterCommand("xmenu", function(source, args, raw)
     exports.xm_menu:openMenu(Menu)
 end)
 
--- EXAMPLE OF SETTING PARAMETERS:
 -- bool is true or false
 params = {
     event = "your:event",
