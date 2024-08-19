@@ -3,7 +3,7 @@ A simple context menu written in React using edited client.lua from qb-menu and 
 
 # Credits: QBCore (qb-menu)
 - xm_menu/client/main.lua code from qb-menu and edited to work standalone.
-- UI re-written in React.
+- UI written in React.
 
 # Preview:
 <img src='https://r2.fivemanage.com/images/r365d_3zQhpDwMdrJm.png' width='300'>
